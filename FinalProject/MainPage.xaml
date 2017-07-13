@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="FinalProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RelativePanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image Source="Assets/scanCard.png" Margin="225,150,150,150"/>
+            <ProgressRing x:Name="progressRing" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="true" Width="250" Height="250"/>
+            <Image Source="Assets/iitLogo.png" HorizontalAlignment="Left"  VerticalAlignment="Top"  RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Height="115" Margin="10,10,-79.6,-33.8" Width="348"/>
+        </RelativePanel>
+    </Grid>
+</Page>

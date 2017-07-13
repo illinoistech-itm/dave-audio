@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="FinalProject.VerificationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RelativePanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <TextBlock x:Name="phrase" HorizontalAlignment="Center" Height="74" VerticalAlignment="Center" Width="540"  RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,0,400,0" RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="30" FontWeight="Bold"/>
+            <Button Style="{StaticResource TransparentStyle}" x:Name="recordingButton"  Background="Transparent" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="true" Height="170" Width="170" Click="recordingButtonClicked" Margin="400,0,0,250">
+                <Image x:Name="recordingImage" Source="Assets/recording.png" Stretch ="Fill" UseLayoutRounding="True" RenderTransformOrigin="0.5,0.5" Margin="0,4,0,0"/>
+            </Button>
+            <Button Style="{StaticResource TransparentStyle}" x:Name="verificationButtn"  Background="Transparent" Height="170" Width="170" Click="verificationButtonClicked" RelativePanel.Below="" HorizontalAlignment="Center" RelativePanel.LeftOf="" RelativePanel.AlignLeftWith="" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="400,250,0,0">
+                <Image x:Name="enrollmentImage" Source="Assets/door.png" Stretch ="Fill" UseLayoutRounding="True" RenderTransformOrigin="0.5,0.5"/>
+            </Button>
+            <ProgressRing x:Name="progressRing" Height="200" Margin="0,0,0,0" Width="200" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"/>
+            <Button Style="{StaticResource TransparentStyle}" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="true" Width="70" Height="70" Background="Transparent" Margin="10,0,0,10" Click="backButtonClicked">
+                <Image x:Name="backArrow" Source="Assets/back-arrow.png" Stretch="Fill"/>
+            </Button>
+            <Image Source="Assets/iitLogo.png" HorizontalAlignment="Left"  VerticalAlignment="Top"  RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Height="81" Margin="10,10,0,0" Width="268"/>
+        </RelativePanel>
+    </Grid>
+</Page>

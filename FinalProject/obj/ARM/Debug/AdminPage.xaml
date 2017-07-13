@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="FinalProject.AdminPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RelativePanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <ComboBox x:ConnectionId='1' x:Name="usersAllowedDropdown" HorizontalAlignment="Center" Height="74" VerticalAlignment="Center" Width="540" HorizontalContentAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="2.6,-141.4,397.4,141.8" RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="30" FontWeight="Bold"/>
+            <ComboBox x:ConnectionId='2' x:Name="usersNotAllowedDropdown" HorizontalAlignment="Center" Height="74" VerticalAlignment="Center" Width="540" HorizontalContentAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="2.6,63.6,397.4,-62.4" RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="30" FontWeight="Bold" RelativePanel.Below=""/>
+            <Button x:ConnectionId='3' Style="{StaticResource TransparentStyle}" x:Name="openDoorButton"  Background="Transparent" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="true" Height="150" Width="150"                           Margin="235,360,-385,-110">
+                <Image x:ConnectionId='11' x:Name="doorImage" Source="Assets/door.png" Stretch ="Fill" UseLayoutRounding="True" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,0"/>
+            </Button>
+            <Button x:ConnectionId='4' Style="{StaticResource TransparentStyle}" x:Name="denyAccessButton"  Background="Transparent" Height="150" Width="150"                                 RelativePanel.Below="" HorizontalAlignment="Center" RelativePanel.LeftOf="" RelativePanel.AlignLeftWith="" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="510.2,-55,-109.8,305">
+                <Image x:ConnectionId='10' x:Name="denyAccessImage" Source="Assets/user-minus.png" Stretch ="Fill" UseLayoutRounding="True" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,0"/>
+            </Button>
+            <Button x:ConnectionId='5' Style="{StaticResource TransparentStyle}" x:Name="AllowAccessButton"  Background="Transparent" Height="150" Width="150"                                  RelativePanel.Below="" HorizontalAlignment="Center" RelativePanel.LeftOf="" RelativePanel.AlignLeftWith="" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="540.6,183.6,-80.2,133.6">
+                <Image x:ConnectionId='9' x:Name="allowAccessImage" Source="Assets/user-plus.png" Stretch ="Fill" UseLayoutRounding="True" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,0"/>
+            </Button>
+            <ProgressRing x:ConnectionId='6' x:Name="progressRing" Height="200" Margin="0,0,0,0" Width="200" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"/>
+            <Button x:ConnectionId='7' Style="{StaticResource TransparentStyle}" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="true" Width="70" Height="70" Background="Transparent" Margin="10,0,0,10"                          >
+                <Image x:ConnectionId='8' x:Name="backArrow" Source="Assets/back-arrow.png" Stretch="Fill"/>
+            </Button>
+            <Image Source="Assets/iitLogo.png" HorizontalAlignment="Left"  VerticalAlignment="Top"  RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Height="81" Margin="10,10,0,0" Width="268"/>
+        </RelativePanel>
+
+    </Grid>
+</Page>
+
